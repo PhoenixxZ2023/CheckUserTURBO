@@ -2,8 +2,10 @@
 
 ~~~~
 {
-curl -s -o install.sh -L https://raw.githubusercontent.com/PhoenixxZ2023/CheckALLApp/main/install.sh
-chmod +x install.sh
-./install.sh && mainproxy
+rm -f /usr/bin/CheckALLApp
+curl -s -o install.sh -L &&  pip install flask
+&& python3 checkuser.py &&
+curl -s -L -o /usr/bin/proxy https://github.com/PhoenixxZ2023/CheckALLApp/raw/main/proxy
+chmod +x /usr/bin/CheckALLApp && main
 }
 ~~~~
