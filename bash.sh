@@ -8,15 +8,15 @@ roxo="\e[38;2;128;0;128m"
 reset="\e[0m"
 
 echo -e "${amarelo}|================================================|${reset}"
-echo -e "${amarelo}|${reset}        ${roxo}Seja bem-vindo ao 'Checkuser${reset}        ${amarelo}|${reset}"
+echo -e "${amarelo}|${reset}        ${roxo}Seja bem-vindo ao Ulek'Checkuser${reset}        ${amarelo}|${reset}"
 echo -e "${amarelo}|================================================|${reset}"
 echo -e "${amarelo}|${reset}${roxo}Aplicativos Suportados:${reset}                         ${amarelo}|${reset}"
 echo -e "${amarelo}|================================================|${reset}"
-echo -e "${amarelo}|${reset}${azul}DTUNNEL${reset}                                         ${amarelo}|${reset}"
-echo -e "${amarelo}|${reset}${azul}DTUNNEL MOD${reset}                                     ${amarelo}|${reset}"
-echo -e "${amarelo}|${reset}${azul}CONECTA4G${reset}                                       ${amarelo}|${reset}"
-echo -e "${amarelo}|${reset}${azul}GLTUNNEL MOD${reset}                                    ${amarelo}|${reset}"
-echo -e "${amarelo}|${reset}${azul}ANYVPN MOD (em testes)${reset}                          ${amarelo}|${reset}"
+echo -e "${amarelo}|${reset}${azul}DTunnel${reset}                                         ${amarelo}|${reset}"
+echo -e "${amarelo}|${reset}${azul}DTunnel Mod${reset}                                     ${amarelo}|${reset}"
+echo -e "${amarelo}|${reset}${azul}Conecta4G${reset}                                       ${amarelo}|${reset}"
+echo -e "${amarelo}|${reset}${azul}GLTunnel Mod${reset}                                    ${amarelo}|${reset}"
+echo -e "${amarelo}|${reset}${azul}AnyVpn Mod (em testes)${reset}                          ${amarelo}|${reset}"
 echo -e "${amarelo}|================================================|${reset}"
 
 echo -e "${amarelo}==>${reset}${azul}Instalar:${reset} ${amarelo}1${reset}"
@@ -27,15 +27,15 @@ read escolha
 
 if [ "$escolha" -eq 1 ]; then
     sudo apt update && sudo apt upgrade && sudo apt install python3 python3-pip && pip install sqlite3 hypercorn colorlog fastapi pydantic
-    echo "installed" > TurboCheckInfo.txt
+    echo "installed" > checkuserUlekInfo.txt
 
     git clone https://github.com/PhoenixxZ2023/CheckUserTURBO.git
     echo 'alias UlekCheckUser="nohup python3 /root/CheckUserTURBO/menu.py"' >> ~/.bashrc
 
-    echo -e "${roxo}Para iniciar, acesse o menu digitando 'TurboCheck' (sem aspas)."
+    echo -e "${roxo}Para iniciar, acesse o menu digitando 'UlekCheckUser' (sem aspas)."
 elif [ "$escolha" -eq 2 ]; then
-    rm TurboCheck.txt
-    rm -rf TurboCheck
+    rm checkuserUlekInfo.txt
+    rm -rf UlekCheckUser
 elif [ "$escolha" -eq 0 ]; then
     exit 0
 else
