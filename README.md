@@ -3,5 +3,5 @@ Um simples check de usuario feito em python que funciona com varios aplicativos,
 para fazer a instalação rode o seguinte comando !
 
 ~~~~
-bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/CheckUserTURBO/main/bash.sh)```
+bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/CheckUserTURBO/main/bash.sh)
 ~~~~
