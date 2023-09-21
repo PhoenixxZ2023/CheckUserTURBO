@@ -1,10 +1,7 @@
-# CheckUserALL
+Um simples check de usuario feito em python que funciona com varios aplicativos, mas seja compreensivo, script em testes ! 
 
+para fazer a instalação rode o seguinte comando !
 
-~~~~
-{
- curl -s -o -L pip install flask
- curl -s -o CheckALLApp.py -L https://raw.githubusercontent.com/PhoenixxZ2023/CheckALLApp/raw/main/CheckALLApp
- chmod +x /usr/bin/CheckALLApp && python3 CheckALLApp.py && nohup python3 checkuser.py && menu
-}
-~~~~
+```bash <(wget -qO- https://raw.githubusercontent.com/UlekBR/UlekCheckUser/main/bash.sh)```
+
+Feito por @UlekBR
